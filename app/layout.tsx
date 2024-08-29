@@ -19,7 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ConvexClerkProvider>{children}</ConvexClerkProvider>
+        <ConvexClerkProvider>
+          {children}
+        </ConvexClerkProvider>
       </body>
     </html>
   );
