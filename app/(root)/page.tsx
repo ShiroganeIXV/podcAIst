@@ -23,6 +23,7 @@ const Home = () => {
         </div> */}
 
 
+          {/* //! Sample podcast data */}
         <div className="podcast_grid">
           {podcastData.map((podcast) => (
             <PodcastCard 
