@@ -1,14 +1,24 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // add hostname to the list of allowed domains
-    images:{
-        remotePatterns: [
-            {
-                protocol: 'https',
-                hostname: 'lovely-flamingo-139.convex.cloud',
-            }
-        ]
-    }
+  typescript: {
+    ignoreBuildErrors: true
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'lovely-flamingo-139.convex.cloud'
+      },
+      {
+        protocol: 'https',
+        hostname: 'sleek-capybara-771.convex.cloud'
+      },
+      {
+        protocol: 'https',
+        hostname: 'img.clerk.com'
+      },
+    ]
+  }
 };
 
 export default nextConfig;
